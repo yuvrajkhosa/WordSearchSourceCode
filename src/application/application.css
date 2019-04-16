@@ -1,0 +1,9 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#pane{
+    /*-fx-background-image: url("file:%2fC:%2fUsers%2fYuvraj%2fDesktop%2fWord%20Searches%2fsearch.png");*/
+    -fx-background-position: left;
+	-fx-fit-to-width: false;
+	-fx-fit-to-height: false;
+   	-fx-background-size: contain;
+    -fx-background-repeat: stretch;
+}

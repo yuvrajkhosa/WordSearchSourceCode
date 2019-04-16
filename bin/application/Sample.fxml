@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="pane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <BorderPane onMouseDragged="#dragging" onMousePressed="#dragStart" onMouseReleased="#dragStop" prefHeight="1000.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <top>
+            <MenuBar onMouseEntered="#menuMouseEntered" onMouseExited="#paneMouseEntered">
+              <menus>
+                <Menu mnemonicParsing="false" text="Select File">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addFile" text="Add" />
+                        <MenuItem mnemonicParsing="false" onAction="#startRec" text="Start" />
+                     </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>
