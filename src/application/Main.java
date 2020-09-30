@@ -31,15 +31,12 @@ public class Main extends Application {
 	}
 	
 	public static void main(String[] args) {
-		filePath = System.getProperty("user.home").replace("\\", "/") + "/Pictures/YuvyWordSearch";
+		//filePath = System.getProperty("user.home").replace("\\", "/") + "/Pictures/YuvyWordSearch";
+		filePath = System.getProperty("user.dir").replace("\\", "/") + "/pics";
 		System.out.println(filePath);
-		System.out.println(System.getProperty("user.home").replace("\\", "/") + "/Pictures");
-		boolean success = (new File(System.getProperty("user.home").replace("\\", "/") + "/Pictures/YuvyWordSearch")).mkdirs();
+		boolean success = new File(filePath).mkdirs();
 		if(!success) {
 			System.out.println("Folder already made or error");
-		}
-		else {
-			filePath = System.getProperty("user.home").replace("\\", "/") + "/Pictures/YuvyWordSearch";
 		}
 		 
 		

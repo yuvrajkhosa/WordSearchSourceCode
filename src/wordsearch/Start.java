@@ -2,7 +2,7 @@ package wordsearch;
 import java.util.Collections;
 import java.util.ArrayList;
 import application.Main;
-import javafx.scene.shape.Line;
+import javafx.scene.shape.*;
 //CURRENTLY NOT REMOVING DUPLICATES FROM WORDBANK
 public class Start {
 
@@ -153,9 +153,9 @@ public class Start {
 						System.out.println("From: " + xPos + " To: " + toXPos);
 						System.out.println("From: " + yPos + " To: " + toYPos);
 						Line l = new Line(xAdd + xPos * Recognition.spaceBetweenHorizontal,yAdd + yPos * Recognition.spaceBetweenVertical, xAdd +toXPos * Recognition.spaceBetweenHorizontal, yAdd + toYPos * Recognition.spaceBetweenVertical);
-						l.setStrokeWidth(24);
-						l.setStyle("-fx-stroke: yellow;");
-						l.setOpacity(0.5);
+
+						l.setStyle("-fx-stroke: yellow; -fx-stroke-width: 18px; -fx-stroke-type: outside; -fx-stroke-line-cap: round");
+						l.setOpacity(0.25);
 						lineArr.add(l);
 						Main.root.getChildren().add(l);
 						

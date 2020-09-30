@@ -1,5 +1,0 @@
-To run type:
-
-java -cp C:\Users\Yuvraj\eclipse-workspace\JavaFX\bin application.Main
-
-Repalce the file path though with where the application is
